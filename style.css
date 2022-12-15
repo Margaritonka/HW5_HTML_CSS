@@ -13,6 +13,11 @@
     src: url(./fonts/Gilroy-Medium.woff2);
 }
 
+@font-face {
+    font-family: Gilroy-Regular;
+    src: url(./fonts/Gilroy-Regular.woff2);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,6 +31,10 @@ body {
     background: #FFFFFF;
 }
 
+header {
+    margin-top: 33px;
+}
+
 .container {
     width: 1170px;
     margin: 0 auto;
@@ -37,24 +46,29 @@ body {
 }
 
 .header{
-    margin-top: 33px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .navigation{
     display: flex;
     justify-content: space-between;
     width: 533px;
-    padding-top: 44px;
+}
+
+.navigation a {
     color: #000000;
     font-family: "Gilroy-Medium";
 }
 
-.home{
+.navigation .home {
     font-family: "Gilroy-SemiBold";
     color: #F25822;
 }
 select {
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    color: #000000;
     border: none;
     background: none;
     color: #111010;
@@ -85,12 +99,15 @@ main {
 .buttons {
     display: flex;
     gap: 72px;
+    font-family: "Gilroy-Bold";
+
 }
 
 .btn1 {
     padding: 15px 35px;
     font-size: 15px;
     line-height: 18px;
+    font-family: "Gilroy-Bold";
     color: #FFFFFF;
     background: #F25822;
     box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
@@ -102,6 +119,7 @@ main {
     font-size: 15px;
     line-height: 18px;
     border: none;
+    font-family: "Gilroy-Bold";
     color: #AAAAAA;
     background: none;
 }
@@ -111,4 +129,139 @@ main {
     padding-bottom: 97px;
     display: flex;
     justify-content: space-between;
+}
+
+/* Стили для второго блока */
+
+section {
+    margin-bottom: 100px;
+}
+
+.cards_top {
+    padding-top: 140px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards_top .card2 {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    padding-bottom: 25px;
+}
+
+.cards_top .card {
+    width: 310px;
+    padding: 40px 30px 25px;
+}
+
+.cards_top img {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.cards_top h2 {
+    margin-bottom: 17px;
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cards_top p {
+    margin-bottom: 25px;
+    font-family: 'Gilroy-Regular';
+    font-size: 15px;
+    line-height: 150%;
+    color: #666666;
+}
+
+.cards_top a {
+    font-family: 'Gilroy-Bold';
+    font-size: 11px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.container_background {
+    background: #FAFAFA;
+    padding: 92px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.section_content {
+    width: 682px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section_content h1 {
+    font-family: 'Gilroy-Bold';
+    font-size: 45px;
+    line-height: 53px;
+    color: #000000;
+    margin-bottom: 19px;
+}
+
+.section_content p {
+    font-family: 'Gilroy-Regular';
+    font-size: 16px;
+    line-height: 150%;
+    olor: #666666;
+}
+
+.cards_main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.cards_main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 30px 50px;
+}
+
+.cards_main .card2 {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.1);
+}
+
+.cards_main img {
+    margin-bottom: 25px;
+}
+
+.cards_main h2 {
+    margin-bottom: 22px; 
+    font-family: 'Gilroy-Bold';
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cards_main p {
+    margin-bottom: 39px;
+    width: 310px;
+    font-family: 'Gilroy-Regular';
+    font-size: 15px;
+    line-height: 150%;
+    color: #AAAAAA;
+}
+
+.cards_main button {
+    margin-bottom: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px rgba(242, 88, 34, 0.2);
+    border-radius: 50px;
+    padding: 15px 40px;
+    border: none;
+    font-family: 'Gilroy-Bold';
+    font-size: 13px;
+    line-height: 150%;
+    color: #FFFFFF;
 }
